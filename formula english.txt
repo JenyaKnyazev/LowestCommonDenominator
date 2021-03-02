@@ -20,3 +20,6 @@ Example2:
 1 4/5 *5 = 9
 finish 28*9=252
 or 18*(9+5)=252
+
+
+if the first reminder equal 0 so the smallest common denominator is the big number
