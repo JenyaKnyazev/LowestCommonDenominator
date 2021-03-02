@@ -18,7 +18,11 @@ namespace lowest_common_denominator
                 return b;
             int dif = b % a;
             int dif2 = a % dif;
-            double mul = dif / dif2;
+            if (dif2 == 0)
+                return b*a/dif;
+            double mul =(double) dif/(int)((double)dif/dif2+(double)dif2/dif);
+            if (dif % dif2 == 0)
+                mul = dif / dif2;
             return (int)(((double)a/dif*mul)*b);
         }
         static void Main(string[] args)
