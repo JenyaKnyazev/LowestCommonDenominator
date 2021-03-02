@@ -1,0 +1,22 @@
+writed by Evgenie Knyazev
+how to find the lowest common denominator 
+first we take the reminder of devision from the big number to small
+then we divide the small number by the reminder and got number with fractural 
+we take the fractural denominator and multiply the number to make it not fractural and then multiply the big number by this number
+
+Example:
+20 28
+28%20=8
+20/8=2.5=2 1/2
+because the fractural part the deniminator is 2 we multiply by 2 
+2 1/2 *2=5
+and finish 5*28=140
+or (5+2)*20=140
+
+Example2:
+18 28
+28%18=10
+18/10=1.8= 1 8/10=1 4/5
+1 4/5 *5 = 9
+finish 28*9=252
+or 18*(9+5)=252
