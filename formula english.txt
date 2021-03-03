@@ -27,6 +27,6 @@ Example3:
 18/12=1.5= 1 6/12=1 1/2
 1 1/2 *2 = 3
 finish 48*3=144
-or(((int)48/18*3+3*48%18/18)=144 or (3*2+2)*18=144)
+or(((int)48/18*3+48%18*3/18)=144 or (3*2+2)*18=144)
 
 if the first reminder equal 0 so the smallest common denominator is the big number
