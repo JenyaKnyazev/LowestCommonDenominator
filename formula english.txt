@@ -1,4 +1,4 @@
-writed by Evgenie Knyazev
+writed by Evgenie/Jenya Knyazev
 how to find the lowest common denominator 
 first we take the reminder of devision from the big number to small
 then we divide the small number by the reminder and got number with fractural 
@@ -30,3 +30,13 @@ finish 48*3=144
 or(((int)48/18*3+48%18*3/18)=144 or (3*2+2)*18=144 or 48/18*3=8 18*8=144 or 144/18=8 8*18=144)
 
 if the first reminder equal 0 so the smallest common denominator is the big number
+
+explain 2: we take two numbers A and B and B B is the bigger we take the remainder after devision B by A (B%A)lets call it R1 then we take second reminder after division A by R1  (A%R1) lets call it R2 then we found the greatest common divisor(GCD) of R1 and R2 and divide R1 by the GCD lets call it M and then we divide A by R1 and multiply by M and multiply by B and we got the result
+B%A=R1,A%R1=R2,R1/GCD(R1,R2)=M,A/R1*M*B=Result , M is what we multiply A/R1 we got number that we multiply by B to got 
+the result to got the number to multiply by A to got the result we take the reminder of B by divide by R1 lets call it
+R3 B%R1=R3 and then we found the GCD of R3 and R1 and divide R1 by the gcd lets call the result M2 we multiply by M2 
+the result of division B by R1 B/R1*M2 and we got the number that we search for to got final result we multiply this number by A
+B%R1=R3,R1/GCD(R1,R3)=M2,B/R1*M2*A=Result or after we got the result we divide it by A to find what number we need to multiply by A  got the result 
+
+
+Another formula(this is not my formula the priviously was my) we take two numbers A and B we multiply them and divide by the GCD and got the result A*B/GCD(A,B)=result
