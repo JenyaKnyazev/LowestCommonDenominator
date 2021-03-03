@@ -13,25 +13,7 @@ namespace lowest_common_denominator
                 return a;
             return gcd(b, a % b);
         }
-        static int lcd(int a, int b) {
-            if (a > b) {
-                int t = a;
-                a = b;
-                b = t;
-            }
-            if (b % a == 0)
-                return b;
-            int dif = b % a;
-            int dif2 = a % dif;
-            if (dif2 == 0)
-                return b*a/dif;
-            double mul = (double)dif /(int)((double)dif/dif2+(double)dif2/dif);
-           // double mul = (double)dif / gcd(dif, dif2);
-            if (dif % dif2 == 0)
-                mul = dif / dif2;
-            return (int)(((double)a/dif*mul)*b);
-        }
-        static int lcd2(int a, int b)
+        static int lcd(int a, int b)
         {
             if (a > b)
             {
@@ -51,6 +33,9 @@ namespace lowest_common_denominator
                 mul = dif / dif2;
             return (int)(((double)a / dif * mul) * b);
         }
+        static int lcd2(int a, int b) {
+            return a * b / gcd(a, b);
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Enter first number");
@@ -58,7 +43,7 @@ namespace lowest_common_denominator
             Console.WriteLine("Enter second number");
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine("Lowest common denominator = " + lcd(a, b));
-            Console.WriteLine("Lowest common denominator2 = " + lcd2(a, b));
+            Console.WriteLine("Lowest common denominator = " + lcd2(a, b));
             Console.ReadLine();
         }
     }
