@@ -11,7 +11,7 @@ Example:
 because the fractural part the deniminator is 2 we multiply by 2 
 2 1/2 *2=5
 and finish 5*28=140
-or(((int)28/20*5+28%20*5/20)*20=140 or (5+2)*20=140)
+or(((int)28/20*5+28%20*5/20)*20=140 or (5+2)*20=140 or 28/20*5=7 7*20=140)
 
 Example2:
 18 28
@@ -19,7 +19,7 @@ Example2:
 18/10=1.8= 1 8/10=1 4/5
 1 4/5 *5 = 9
 finish 28*9=252
-or(((int)28/18*9+28%18*9/18)*18=252 or (9+5)*18=252)
+or(((int)28/18*9+28%18*9/18)*18=252 or (9+5)*18=252 or 28/18*9=14 14*18=252)
 
 Example3:
 18 48
@@ -27,6 +27,6 @@ Example3:
 18/12=1.5= 1 6/12=1 1/2
 1 1/2 *2 = 3
 finish 48*3=144
-or(((int)48/18*3+48%18*3/18)=144 or (3*2+2)*18=144)
+or(((int)48/18*3+48%18*3/18)=144 or (3*2+2)*18=144 or 48/18*3=8 18*8=144)
 
 if the first reminder equal 0 so the smallest common denominator is the big number
